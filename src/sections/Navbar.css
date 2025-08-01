@@ -1,0 +1,120 @@
+.nav_main {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 50px; */
+    padding: 14px 10px;
+    font-family: sans-serif;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 0;
+    font-family: "Lucida Handwriting";
+}
+.f_log{
+    color: orchid;
+}
+
+.nav_div {
+    display: flex;
+}
+
+.link_tag {
+    list-style: none;
+}
+
+.link_tag a {
+    text-decoration: none;
+    padding: 0px 10px;
+    /* margin: 0px 5px; */
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+.link_tag .active {
+    border-bottom: 2px solid;
+}
+.pre button{
+    background-color: red;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.menu{
+    display: none;
+    
+}
+.menu_icon{
+    padding: 0px;
+    font-size: 33px;
+    border: 1px solid silver;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.res_nav{
+    display: none;
+    border: 2px solid blue;
+    padding: 10px;
+    position: fixed;
+    transition: 0.3s;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    font-family: sans-serif;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.nav_cake{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    top: 80px;
+    right: 40px;
+}
+.res_link_tag{
+    list-style: none;
+    margin-bottom: 13px;
+    padding-left: 50px;
+}
+.res_link_tag a{
+    text-decoration: none;
+    /* padding: 0px 10px; */
+    font-size: 15px;
+    font-weight: 400;
+    color: black;}
+.res_link_tag .active{
+    color: red;
+}
+.res_icon{
+    font-size: 20px;
+    margin-bottom: -3px;
+    margin-right: 5px;
+}
+@media (max-width: 700px) {
+    .menu{
+        display: block;
+    }
+    .nav_div{
+        display: none;
+    }
+    .res_nav{
+        display: block;
+    }
+}
