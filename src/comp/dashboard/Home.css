@@ -1,3 +1,217 @@
+.customer_title {
+    margin: 0;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.main_poster {
+    position: relative;
+    overflow-x: hidden;
+}
+
+.flower_animate {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.flowers_style {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: hsl(calc(360 * var(--i) / 30), 70%, 70%);
+    top: -10px;
+    left: calc(100% * var(--i) / 30);
+    animation: confetti-fall 6s linear infinite;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(-10px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+.poster_content {
+    display: flex;
+    padding: 0px 60px 60px 60px;
+    /* padding: 60px; */
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
+.qutos {
+    color: #c2185b;
+    font-size: 20px;
+}
+
+.poster_contect_div {
+    flex: 1 1 400px;
+    min-width: 280px;
+}
+
+.right-section {
+    flex: 1 1 400px;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+}
+
+.main_title {
+    font-size: 48px;
+    color: #d6336c;
+    text-shadow: 0 0 10px #ffa0c5;
+    animation: glowText 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes glowText {
+    0% {
+        text-shadow: 0 0 10px #ffa0c5;
+    }
+
+    100% {
+        text-shadow: 0 0 20px #ff74b1;
+    }
+}
+
+.sub-heading {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #555;
+}
+
+.cta-button {
+    background-color: #ff4081;
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c2185b;
+    transform: scale(1.05);
+}
+
+.poster_img {
+    width: 100%;
+    max-width: 400px;
+    /* height: 100%; */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.poster_main_image {
+    /* border-radius: 20px; */
+    animation: floatCake 4s ease-in-out infinite;
+
+}
+
+@keyframes floatCake {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Why Choose Us */
+.why-us-section {
+    padding: 40px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.why-us-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #d6336c;
+}
+
+.why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    background: #ffeef3;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+/* Popular Cakes */
+.popular_cake_div {
+    padding: 40px 20px;
+    background: #fff0f5;
+    text-align: center;
+}
+
+.popular_cake_div h2 {
+    font-size: 32px;
+    color: #d6336c;
+    margin-bottom: 30px;
+}
+
+.popular_cake_box{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cake_box{
+    background: white;
+    border-radius: 12px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.cake_box:hover {
+    transform: scale(1.05);
+}
+
+.cake_box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
 .home_poster {
     width: 100%;
     /* border: 2px solid red; */
@@ -70,14 +284,15 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.inner_pos_cake p:hover{
+
+.inner_pos_cake p:hover {
     background: white;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.inner_pos_cake:hover{
+.inner_pos_cake:hover {
     transform: scale(1.1);
     transition: 0.2s;
 }
