@@ -4,11 +4,6 @@
     text-align: center;
 }
 
-.main_poster {
-    position: relative;
-    overflow-x: hidden;
-}
-
 .flower_animate {
     position: absolute;
     width: 100%;
@@ -38,17 +33,13 @@
     }
 }
 
+.sonu {
+    border: 2px solid red;
+}
+
 .poster_content {
-    display: flex;
-    padding: 0px 60px 60px 60px;
-    /* padding: 60px; */
+    padding: 60px 30px 60px 20px;
     box-sizing: border-box;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    position: relative;
-    z-index: 1;
-    flex-wrap: wrap;
 }
 
 .qutos {
@@ -57,16 +48,10 @@
 }
 
 .poster_contect_div {
+    padding: 5px;
     flex: 1 1 400px;
-    min-width: 280px;
 }
 
-.right-section {
-    flex: 1 1 400px;
-    min-width: 280px;
-    display: flex;
-    justify-content: center;
-}
 
 .main_title {
     font-size: 48px;
@@ -115,53 +100,46 @@
     border-radius: 20px;
 }
 
-.poster_main_image {
-    /* border-radius: 20px; */
-    animation: floatCake 4s ease-in-out infinite;
-
+/* slide image css  */
+.slide_div {
+    /* border: 2px solid blue; */
 }
 
-@keyframes floatCake {
-
-    0%,
-    100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-10px);
-    }
+.inner_slide_div {
+    background-color: #ff4081;
+    color: white;
+    /* border: 1px solid red; */
+    margin: 2px 5px;
+    border-radius: 5px;
+    position: relative;
 }
 
-/* Why Choose Us */
-.why-us-section {
-    padding: 40px 20px;
-    background: #fff;
-    text-align: center;
+.offer_cake {
+    position: absolute;
+    /* width: 50px; */
+    padding: 10px;
+    background-color: green;
+    color: white;
+    top: 10px;
+    margin: 0;
+    padding: 2px 10px;
+    font-size: 14px;
+    left: 5px;
+    border-radius: 0px 10px 0px 10px;
 }
 
-.why-us-section h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-    color: #d6336c;
+.offer_icon {
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+    margin-top: -5px;
 }
 
-.why-us-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
+.slide_image {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
 }
-
-.card {
-    padding: 20px;
-    background: #ffeef3;
-    border-radius: 10px;
-    font-size: 18px;
-}
-
-
-
-
 
 
 
@@ -178,14 +156,14 @@
     margin-bottom: 30px;
 }
 
-.popular_cake_box{
+.popular_cake_box {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.cake_box{
+.cake_box {
     background: white;
     border-radius: 12px;
     padding: 10px;
@@ -204,34 +182,69 @@
     margin-bottom: 10px;
 }
 
-
-
-
-
-
-
-
-
 .home_poster {
     width: 100%;
-    /* border: 2px solid red; */
     height: 100vh;
     position: relative;
-    /* top: -55px; */
-    padding: 0;
-    margin: 0;
 }
 
-.home_poster .post_back {
-    position: absolute;
+.img_home_poster {
     top: 0;
+    position: absolute;
     width: 100%;
-    height: 100%;
-    z-index: -4;
-    padding: 0;
-    margin: 0;
-    /* filter: brightness(0.2); */
+    height: 100vh;
+    z-index: -1;
+    animation: floatCake 4s ease-in-out infinite;
 }
+
+.home_poster_content {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+
+}
+
+.home_poster_content h3 {
+    color: #d6336c;
+    text-shadow: 0px 0px 10px #d6336c;
+}
+
+.home_poster_content h4 {
+    color: white;
+    text-shadow: 0px 0px 10px #d6336c;
+}
+
+.home_poster_content p {
+    margin: 0;
+    padding: 10px 0px;
+    border-left: 3px solid;
+    padding-left: 10px;
+    border-color: #d6336c;
+    text-align: justify;
+    font-weight: bold;
+}
+
+
+@keyframes floatCake {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+
+
+
+
 
 .pos_content {
     border: 2px solid red;
@@ -401,7 +414,116 @@
     height: 350px;
 }
 
-@media (max-width: 800px) {
+/* about css part */
+.about_main {
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_content_div {
+    padding: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    line-height: 2rem;
+    text-align: justify;
+    color: #ff4081;
+    border-left: 5px solid #ff4081;
+    border-bottom: 5px solid #ff4081;
+    border-bottom-left-radius: 50px;
+}
+
+.about_store {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+
+}
+
+.choose_div{
+    overflow: hidden;
+}
+
+.choose_card {
+    background-color: whitesmoke;
+    padding: 20px 24px;
+    font-size: 20px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0px 0px 10px 2px silver;
+}
+.choose_card:hover{
+    background: #ffa0c5;
+    transition: 0.2s;
+    
+}
+.choose_div_box {
+    width: 20%;
+
+}
+
+.choose_div_box p {
+    margin: 0;
+}
+
+.chose_div_icon {
+    font-size: 70px;
+    background-color: rgb(244, 244, 244);
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* review_div css code */
+.main_review{
+    margin: 10px;
+}
+
+.review_div{
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color: white;
+    height: 210px;
+    box-shadow: 0px 0px 15px 1px silver;
+    position: relative;
+    
+}
+.rev_name{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.rev_name p{
+    color: #ff4081;
+    padding: 0px 0px 0px 15px;
+}
+.review_div img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.rate_view{
+    margin: 10px 5px;
+}
+.rate{
+    margin-right: 2px;
+    color: gold;
+}
+.rew_text{
+    margin-top: 10px;
+    /* padding: 10px; */
+}
+.review_date{
+    position: absolute;
+    bottom: -5px;
+    right: 5px;
+}
+
+
+
+@media (max-width: 700px) {
     .cake_poster {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -410,6 +532,18 @@
         width: 250px;
         padding: 10px;
     }
+
+    .home_poster_content {
+        width: 70%;
+        left: 10%;
+        transform: translate(-10%, -50%);
+
+    }
+
+    .poster_content {
+        padding: 30px 30px 40px 20px;
+    }
+
 }
 
 @media (max-width: 550px) {
@@ -426,6 +560,17 @@
         width: 100%;
         height: 180px;
         border-radius: 5px;
+    }
+
+    .home_poster_content {
+        padding: 15px;
+        width: 100%;
+        left: 10%;
+        transform: translate(-10%, -50%);
+    }
+
+    .poster_content {
+        padding: 20px 30px 0px 20px;
     }
 }
 
