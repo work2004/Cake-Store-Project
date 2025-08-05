@@ -11,7 +11,7 @@ function Shop() {
                     {
                         shopData.map((cakeItem, cakeIndex) => {
                             return (
-                                <div key={cakeIndex} className='col-lg-3 col-md-4 col-sm-6 col-6 main_shopCard'>
+                                <div key={cakeIndex} className='col-lg-3 col-md-4 col-sm-6 col-12 main_shopCard'>
                                     <div className='shop_card'>
                                         <div className='shop_img'>
                                             <img src={cakeItem.imgLink} alt='shop image' />
