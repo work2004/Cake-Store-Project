@@ -1,0 +1,53 @@
+.shop_card{
+    text-align: center;
+    padding: 5px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 0.8px silver;
+    margin: 10px 0px;
+}
+.shop_card:hover{
+    .shop_img img{
+        scale: 1;
+    }
+}
+.shop_img{
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    height:150px;
+    overflow: hidden;
+}
+.shop_img img{
+    width: 100%;
+    height: 100%;
+    scale: 1.2;
+    transition: 0.3s ease-in-out;
+}
+.shop_card h3{
+    font-size: 20px;
+    color: violet;
+    margin: 0;
+    padding: 5px 0px;
+}
+
+.no_rate{
+    /* background-color: blue; */
+    text-decoration: 2px solid red ;
+    text-decoration-line: line-through;
+}
+
+.shop_buy{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0px;
+}
+.shop_buy button{
+    border: none;
+    background: none;
+    /* border: 2px solid blue; */
+    padding: 5px 20px;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+}

@@ -7,7 +7,7 @@ function Navbar() {
     const [navData, setNavData ] = useState({top: '-235px'});
     const links = [
         { link: '/', path: 'home' },
-        { link: 'about', path: 'about' },
+        { link: 'shop', path: 'shop' },
         { link: 'service', path: 'service' },
         { link: 'gallary', path: 'gallary' },
     ]
